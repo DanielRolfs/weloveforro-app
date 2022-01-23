@@ -1,0 +1,28 @@
+<app-dance-menue></app-dance-menue>
+
+<div class="flex justify-center items-center h-screen">
+    <div class="flex-col">
+        <div>
+            <mat-form-field appearance="outline">
+                <input class="mt-8 h-8" matInput placeholder="E-mail">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <input class="mt-8 h-8" matInput placeholder="Password">
+            </mat-form-field>
+        </div>
+
+        <div class="divide-y divide-dashed">
+            <div class="flex flex-row justify-between items-center mt-1">
+                <div class="cursor-pointer" routerLink="/reset-password" routerLinkActive="router-link-active">Forgot password?</div>
+                <div routerLink="/login" routerLinkActive="router-link-active" class="menu-item button cursor-pointer">
+                    Log in</div>
+            </div>
+
+            <div class="flex flex-row justify-center items-center mt-2">
+                <div routerLink="/register" routerLinkActive="router-link-active" class="mt-2 cursor-pointer">Create new account</div>
+            </div>
+        </div>
+    </div>
+</div>

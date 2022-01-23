@@ -1,0 +1,59 @@
+<div class="scroll-container">
+
+    <!-- Head -->
+
+    <div class="h-screen scroll-area">
+
+        <app-dance-menue></app-dance-menue>
+
+
+        <div class="header flex flex-row green h-screen items-end">
+            <div class="headline flex flex-col items-center justify-center w-3/5 h-3/4 text-center px-6">
+                <div>
+                    <h1>Witch movement do you know already?</h1>
+                </div>
+                <div>
+                    <h3>Select a teacher</h3>
+                </div>
+                <div>
+                    <mat-icon>keyboard_arrow_down</mat-icon>
+                </div>
+
+            </div>
+            <div class="w-2/5 flex items-end justify-start h-full">
+                <div class="h-3/4"><img class="h-full" src="assets/img/dumont.png"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Main Area -->
+
+
+    <div class="h-screen scroll-area">
+
+        <div class="m">
+            <div>
+                <h1 class="green w-full text-center mt-40">Teacher</h1>
+            </div>
+
+
+            <div (click)="addTeacher()" class="flex justify-end mt-8 mr-24">
+                <mat-icon>add_circle_outline</mat-icon>
+            </div>
+
+
+            <!-- Teacher List -->
+
+            <div class="flex flex-col">
+                <!-- Teacher -->
+                <app-teacher-info></app-teacher-info>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,9 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ForroMainComponent } from './forro-main/forro-main.component';
+import { CourseComponent } from './course/course.component';
+import { TeacherListComponent } from './teacher-list/teacher-list.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+
 
 const routes: Routes = [
-  { path: '', component: ForroMainComponent },
+  { path: '', component: TeacherListComponent },
+  { path: 'teacher-list', component: TeacherListComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'course', component: CourseComponent },
+  { path: 'reset-password', component: ResetPasswordComponent },
 ];
 
 @NgModule({
@@ -11,3 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
