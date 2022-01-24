@@ -26,6 +26,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { AddMovementComponent } from './add-movement/add-movement.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     DanceMenueComponent,
     AddTeacherComponent,
     ResetPasswordComponent,
+    AddMovementComponent,
   ],
   imports: [
     BrowserModule,

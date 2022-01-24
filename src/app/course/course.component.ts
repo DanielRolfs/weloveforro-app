@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddMovementComponent } from '../add-movement/add-movement.component';
 
 @Component({
   selector: 'app-course',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  addMovement() {
+    this.dialog.open(AddMovementComponent);
   }
 
 }
