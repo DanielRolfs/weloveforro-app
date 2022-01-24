@@ -2,9 +2,10 @@ export class User {
     firstName: string;
     lastName: string;
     email: string;
+    style: string;
+    language: string;
     organisation: string;
     city: string;
-    movements: number;
     focus: string;
     levels: string;
 
@@ -12,9 +13,10 @@ export class User {
         this.firstName = obj ? obj.firstName : '';
         this.lastName = obj ? obj.lastName : '';
         this.email = obj ? obj.email : '';
+        this.style = obj ? obj.style : '';
+        this.language = obj ? obj.language : '';
         this.organisation = obj ? obj.organisation : '';
         this.city = obj ? obj.city : '';
-        this.movements = obj ? obj.movements : '';
         this.focus = obj ? obj.focus : '';
         this.levels = obj ? obj.levels : '';
     }
@@ -24,11 +26,12 @@ export class User {
         firstName: this.firstName,
         lastName: this.lastName,
         email: this.email,
+        style:  this.style,
+        language: this.language,
         organisation: this.organisation,
         city: this.city,
-        movements: this.movements,
         focus: this.focus,
-        levels: this.levels,
+        levels: this.levels
         };
     }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import { User } from 'src/models/user.class';
 import { AddTeacherComponent } from '../add-teacher/add-teacher.component';
 
 @Component({
@@ -9,7 +10,11 @@ import { AddTeacherComponent } from '../add-teacher/add-teacher.component';
 })
 export class TeacherListComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  user = new User();
+
+  constructor(public dialog: MatDialog) {
+     
+   }
 
   ngOnInit(): void {
   }

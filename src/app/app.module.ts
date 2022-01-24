@@ -21,6 +21,11 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+
 
 @NgModule({
   declarations: [
@@ -38,14 +43,18 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    FormsModule,
-    MatFormFieldModule,
-    MatInputModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     BrowserAnimationsModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatTooltipModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    AngularFirestoreModule,
+    AngularFireModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
