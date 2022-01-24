@@ -1,7 +1,79 @@
 <app-dance-menue></app-dance-menue>
 
-<app-teacher-info></app-teacher-info>
+<div class="mt-80">
+  <h1 class="text-center green">Course</h1>
+  <h3 class="text-center green">with</h3>
+</div>
 
-<button mat-fab color="primary" class="add-lesson-button"  matTooltip="Add lesson">
+<div>
+  <app-teacher-info></app-teacher-info>
+</div>
+
+<div class="mt-20">
+  <h1 class="text-center green">Movements</h1>
+
+</div>
+
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 class="green">Level 1</h1>
+      </mat-panel-title>
+      <mat-panel-description>
+        Level description
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header class="items-center">
+        <mat-panel-title>
+          <h2 class="green">Movement 1</h2>
+        </mat-panel-title>
+        <mat-panel-description class="flex justify-end">
+          <mat-checkbox class="mr-20">I can</mat-checkbox>
+          <mat-checkbox class="mr-20">I do</mat-checkbox>
+          <mat-checkbox class="mr-20">I want</mat-checkbox>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div class="flex flex-row justify-center">
+        
+        <div class="mr-8 w-1/2" style="height: 500px;">
+          <h3 class="green text-center">Preview</h3>
+          <div class=" w-full h-full bg-black flex justify-center items-center">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/QdkAlYXQJs0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </div>
+          
+        </div>
+
+        <div class="mr-8 w-1/2" style="height: 500px;">
+          <h3 class="green text-center">Explanation</h3>
+          <div class=" w-full h-full bg-black flex justify-center items-center">
+            <!-- <div >
+              <button mat-raised-button color="primary">Buy</button>
+            </div> -->
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/QdkAlYXQJs0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+
+
+    </mat-expansion-panel>
+
+
+  </mat-expansion-panel>
+</mat-accordion>
+
+<div class="scroll-container">
+  <button mat-fab color="white" class="add-lesson-button" matTooltip="Add lesson">
     <mat-icon>add</mat-icon>
   </button>
+</div>

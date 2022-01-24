@@ -25,6 +25,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     MatFormFieldModule,
     AngularFirestoreModule,
     AngularFireModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
