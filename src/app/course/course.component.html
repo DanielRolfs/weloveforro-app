@@ -9,28 +9,30 @@
   <app-teacher-info></app-teacher-info>
 </div>
 
-<div class="mt-20">
+<div class="mt-20 mb-8">
   <h1 class="text-center green">Movements</h1>
 
 </div>
 
+
+
 <mat-accordion class="mb-40">
-  <mat-expansion-panel>
+  <mat-expansion-panel >
     <mat-expansion-panel-header>
-      <mat-panel-title>
+      <mat-panel-title class="flex items-center">
         <h2 class="green">Level 1</h2>
       </mat-panel-title>
-      <mat-panel-description>
+      <mat-panel-description class="flex items-center">
         Level description
       </mat-panel-description>
     </mat-expansion-panel-header>
 
     <mat-expansion-panel>
       <mat-expansion-panel-header class="items-center">
-        <mat-panel-title>
+        <mat-panel-title class="flex items-center">
           <h3 class="green">Movement 1</h3>
         </mat-panel-title>
-        <mat-panel-description class="flex justify-end">
+        <mat-panel-description class="flex items-center justify-center">
           <mat-checkbox class="mr-20">I can</mat-checkbox>
           <mat-checkbox class="mr-20">I do</mat-checkbox>
           <mat-checkbox class="mr-20">I want</mat-checkbox>
@@ -41,7 +43,7 @@
         
         <div class="mr-8 w-1/2" style="height: 500px;">
           <h3 class="green text-center">Preview</h3>
-          <div class=" w-full h-full bg-black flex justify-center items-center">
+          <div class="mt-2 w-full h-full bg-black flex justify-center items-center">
             <iframe class="w-full h-full" src="https://www.youtube.com/embed/QdkAlYXQJs0" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -52,7 +54,7 @@
 
         <div class="mr-8 w-1/2" style="height: 500px;">
           <h3 class="green text-center">Explanation</h3>
-          <div class=" w-full h-full bg-black flex justify-center items-center">
+          <div class="mt-2 w-full h-full bg-black flex justify-center items-center">
             <!-- <div >
               <button mat-raised-button color="primary">Buy</button>
             </div> -->
@@ -72,8 +74,8 @@
   </mat-expansion-panel>
 </mat-accordion>
 
-<div class="scroll-container">
-  <button (click)="addMovement()" mat-fab color="white" class="add-lesson-button" matTooltip="Add lesson">
+<div class="fixed right-8 bottom-8">
+  <button (click)="addMovement()" mat-fab color="white" class="" matTooltip="Add lesson">
     <mat-icon>add</mat-icon>
   </button>
 </div>
